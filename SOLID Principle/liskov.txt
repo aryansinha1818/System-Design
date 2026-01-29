@@ -1,0 +1,32 @@
+Exactly bhai! 💯 Tu bilkul sahi samjha hai — aur yahi hai Liskov Substitution Principle (LSP) ka real essence.
+
+Let me quickly wrap it in super-simple steps so it's locked in:
+
+✅ Tera Example Breakdown:
+cpp
+Copy code
+void processPayment(PaymentMethod *method) {
+    method->pay(500);  // base class pointer calling virtual function
+}
+
+CreditCard cc;
+processPayment(&cc);  // child class object passed
+🔍 Kya ho raha hai?
+method ek base class pointer hai (PaymentMethod*).
+
+&cc ek child class object ka address hai (CreditCard).
+
+Jab method->pay(500) call hota hai:
+
+Since pay() is virtual, it calls CreditCard ka overridden version.
+
+✅ Iska matlab:
+Jahaan base class ka object chalta, waha pe child class ka object safely kaam kar raha hai.
+
+📌 That’s LSP:
+“A derived class object should be able to replace a base class object without breaking the program.”
+
+✔️ CreditCard ne PaymentMethod ka pay() override kiya
+✔️ CreditCard ne koi aisa kaam nahi kiya jo PaymentMethod ke contract ko todta ho
+✔️ So CreditCard ko hum PaymentMethod ke jagah use kar sakte hain
+🎯 LSP Follow ho gaya!
