@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/aryansinha18/Documents/Work/System Design/3. Singleton Design Pattern/output/main'
+relocations:     []
+...
