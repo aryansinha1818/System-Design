@@ -2,4 +2,6 @@ Whiteboard/
 # output/
 output/
 
+*.pdf
+
 .dSYM

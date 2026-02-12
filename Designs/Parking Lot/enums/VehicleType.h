@@ -1,6 +1,6 @@
 #pragma once
 
-enum class SpotType
+enum class VehicleType
 {
     BIKE,
     CAR
